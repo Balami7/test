@@ -1,27 +1,35 @@
 {
   "redirects": [
-    {
-      "source": "/",
-      "destination": "/SNITIS",
-      "statusCode": 308
-    }
+    { "source": "/", "destination": "/SNITIS", "statusCode": 308 }
   ],
   "rewrites": [
     {
-      "source": "/SNITIS/_next/static/:path*",
-      "destination": "https://snitis.vercel.app/_next/static/:path*"
+      "source": "/SNITIS/_next/static/:file*",
+      "destination": "https://snitis.vercel.app/SNITIS/_next/static/:file*"
     },
     {
       "source": "/_next/static/:path*",
-      "destination": "https://snitis.vercel.app/_next/static/:path*"
+      "destination": "https://snitis.vercel.app/SNITIS/_next/static/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://snitis.vercel.app/SNITIS/_next/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "https://snitis.vercel.app/SNITIS/images/:path*"
+    },
+    {
+      "source": "/SNITIS",
+      "destination": "https://snitis.vercel.app/SNITIS"
     },
     {
       "source": "/SNITIS/:path*",
-      "destination": "https://snitis.vercel.app/:path*"
+      "destination": "https://snitis.vercel.app/SNITIS/:path*"
     },
     {
-      "source": "/:path*",
-      "destination": "https://snitis.vercel.app/SNITIS/:path*"
+      "source": "/(.*)",
+      "destination": "https://snitis.vercel.app/SNITIS/$1"
     }
   ]
 }
