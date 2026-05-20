@@ -9,15 +9,15 @@
   "rewrites": [
     {
       "source": "/SNITIS/_next/static/:path*",
-      "destination": "https://snitis.vercel.app/SNITIS/_next/static/:path*"
+      "destination": "https://snitis.vercel.app/_next/static/:path*"
     },
     {
       "source": "/_next/static/:path*",
-      "destination": "https://snitis.vercel.app/SNITIS/_next/static/:path*"
+      "destination": "https://snitis.vercel.app/_next/static/:path*"
     },
     {
       "source": "/SNITIS/:path*",
-      "destination": "https://snitis.vercel.app/SNITIS/:path*"
+      "destination": "https://snitis.vercel.app/:path*"
     },
     {
       "source": "/:path*",
